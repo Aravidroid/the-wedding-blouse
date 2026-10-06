@@ -1,5 +1,5 @@
 // Auto-generated gallery database
-window.GALLERY_DATA = {
+export const galleryData = {
   "designer": [
     {
       "id": "designer-1",
