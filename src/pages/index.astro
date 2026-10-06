@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout 
   title="THE WEDDING BLOUSE by Kaaru - Premium Bridal Designs"
-  description="Every marriage begins with trust. Every bride begins with us. Browse our collections: Designer, Manthram, Vaibhavam, and Mahotsavam.">
+  description="Every marriage begins with trust. Every bride begins with us. Browse our collections: Regular, Designer, Manthram, Vaibhavam, Mahotsavam, Kurti, and Kids.">
 
   <main id="home" class="scroll-smooth">
 
@@ -14,48 +14,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section class="relative min-h-screen flex flex-col md:flex-row overflow-hidden">
 
       <!-- Left: Brand Statement Panel -->
-      <div class="relative z-10 flex flex-col justify-center bg-[#800000] text-white
+      <div class="relative z-10 flex flex-col justify-center bg-[#e1a730] text-[#5A0007]
                   w-full md:w-[45%] px-10 md:px-16 py-24 md:py-0 shrink-0">
 
         <!-- Decorative corner ornament -->
-        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-[#D4AF37] opacity-60"></div>
-        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-[#D4AF37] opacity-60"></div>
-
-        <!-- Eyebrow label -->
-        <span class="text-[#D4AF37] text-xs tracking-[0.35em] uppercase font-semibold mb-6 block">
-          Est. Kaaru Couture
-        </span>
+        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-[#5A0007] opacity-40"></div>
+        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-[#5A0007] opacity-40"></div>
 
         <!-- Headline -->
-        <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
+        <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-[#5A0007]">
           The<br/>
           Wedding<br/>
-          <em class="not-italic text-[#D4AF37]">Blouse.</em>
+          <em class="not-italic text-[#7E1215]">Blouse.</em>
         </h1>
 
         <!-- Divider rule -->
         <div class="flex items-center gap-4 mb-6">
-          <div class="h-px bg-[#D4AF37] w-12 opacity-70"></div>
-          <div class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></div>
-          <div class="h-px bg-[#D4AF37] w-12 opacity-70"></div>
+          <div class="h-px bg-[#5A0007] w-12 opacity-60"></div>
+          <div class="w-1.5 h-1.5 rounded-full bg-[#5A0007]"></div>
+          <div class="h-px bg-[#5A0007] w-12 opacity-60"></div>
         </div>
 
-        <p class="text-white/80 text-base md:text-lg leading-relaxed max-w-xs mb-10 font-light">
+        <p class="text-[#5A0007]/90 text-base md:text-lg leading-relaxed max-w-xs mb-10 font-medium">
           Every marriage begins with trust.<br/>Every bride begins with us.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/gallery"
-            class="inline-flex items-center justify-center gap-2 bg-[#D4AF37] text-[#800000]
-                   font-bold text-sm tracking-wider uppercase px-8 py-4
-                   hover:bg-white transition-colors duration-300">
+            class="inline-flex items-center justify-center gap-2 bg-[#5A0007] text-[#e1a730]
+                   font-bold text-sm tracking-wider uppercase px-8 py-4 shadow-md
+                   hover:bg-[#7E1215] hover:text-white transition-colors duration-300">
             Explore Collections
             <i class="fas fa-arrow-right text-xs"></i>
           </a>
           <a href="#about"
-            class="inline-flex items-center justify-center gap-2 border border-white/40 text-white
+            class="inline-flex items-center justify-center gap-2 border-2 border-[#5A0007] text-[#5A0007]
                    font-semibold text-sm tracking-wider uppercase px-8 py-4
-                   hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors duration-300">
+                   hover:bg-[#5A0007] hover:text-white transition-colors duration-300">
             Our Story
           </a>
         </div>
@@ -63,76 +58,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Floating stat strip -->
         <div class="mt-16 flex gap-10">
           <div>
-            <p class="heading text-3xl font-bold text-[#D4AF37]">10+</p>
-            <p class="text-white/60 text-xs tracking-wider uppercase mt-1">Years of Craft</p>
+            <p class="heading text-3xl font-bold text-[#5A0007]">10+</p>
+            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Years of Craft</p>
           </div>
-          <div class="w-px bg-white/20"></div>
+          <div class="w-px bg-[#5A0007]/25"></div>
           <div>
-            <p class="heading text-3xl font-bold text-[#D4AF37]">4</p>
-            <p class="text-white/60 text-xs tracking-wider uppercase mt-1">Collections</p>
+            <p class="heading text-3xl font-bold text-[#5A0007]">7</p>
+            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Collections</p>
           </div>
-          <div class="w-px bg-white/20"></div>
+          <div class="w-px bg-[#5A0007]/25"></div>
           <div>
-            <p class="heading text-3xl font-bold text-[#D4AF37]">∞</p>
-            <p class="text-white/60 text-xs tracking-wider uppercase mt-1">Happy Brides</p>
+            <p class="heading text-3xl font-bold text-[#5A0007]">∞</p>
+            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Happy Brides</p>
           </div>
         </div>
       </div>
 
       <!-- Right: Single Hero Image Panel -->
-      <div class="relative w-full md:flex-1 min-h-[70vh] md:min-h-0 bg-[#800000] overflow-hidden">
+      <div class="relative w-full md:flex-1 min-h-[70vh] md:min-h-0 bg-[#e1a730] overflow-hidden">
         <img src="/assets/kaaru.jpeg" alt="Kaaru Bridal Blouse Couture"
           class="w-full h-full object-cover object-center md:object-top block" />
-        <!-- Subtle gold border accent -->
-        <div class="absolute inset-0 border-[3px] border-[#D4AF37]/30 pointer-events-none"></div>
+        <!-- Subtle border accent -->
+        <div class="absolute inset-0 border-[3px] border-[#5A0007]/20 pointer-events-none"></div>
       </div>
 
-      <!-- Scroll indicator -->
-      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 hidden md:flex">
-        <p class="text-white/50 text-[10px] tracking-[0.2em] uppercase">Scroll</p>
-        <div class="w-px h-10 bg-gradient-to-b from-white/40 to-transparent animate-bounce-slow"></div>
-      </div>
     </section>
-
     <!-- ═══════════════════════════════════════════════
-         MARQUEE — Craft credentials ticker
-    ════════════════════════════════════════════════ -->
-    <div class="bg-[#D4AF37] py-3 overflow-hidden whitespace-nowrap">
-      <div class="marquee-track inline-flex gap-12 text-[#800000] font-bold text-xs tracking-[0.25em] uppercase">
-        <span>Maggam Work</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Zardozi Embroidery</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Banarasi Silk</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Hand-Crafted Couture</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Bespoke Tailoring</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>10+ Years of Expertise</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Bridal Blouse Specialists</span>
-        <span class="text-[#800000]/40">✦</span>
-        <!-- Duplicate for seamless loop -->
-        <span>Maggam Work</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Zardozi Embroidery</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Banarasi Silk</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Hand-Crafted Couture</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Bespoke Tailoring</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>10+ Years of Expertise</span>
-        <span class="text-[#800000]/40">✦</span>
-        <span>Bridal Blouse Specialists</span>
-        <span class="text-[#800000]/40">✦</span>
-      </div>
-    </div>
-
-    <!-- ═══════════════════════════════════════════════
-         COLLECTIONS — 4-card grid
+         COLLECTIONS — 7-card grid
     ════════════════════════════════════════════════ -->
     <section class="py-12 md:py-20 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
@@ -141,7 +93,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3">Browse by Category</h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+          <a href="/gallery?category=regular"
+            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            <div class="mb-4 flex justify-center items-center h-28">
+              <img src="/assets/logo_transparent.png" alt="Regular Logo" class="h-28 w-auto object-contain" />
+            </div>
+            <h3 class="heading text-2xl font-bold brand-maroon mb-2">Regular</h3>
+            <p class="text-gray-600 mb-4 text-sm">Timeless everyday elegance &amp; classic cuts</p>
+            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
+              Explore →
+            </span>
+          </a>
 
           <a href="/gallery?category=designer"
             class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
@@ -190,6 +154,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Explore →
             </span>
           </a>
+
+          <a href="/gallery?category=kurti"
+            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            <div class="mb-4 flex justify-center items-center h-28">
+              <img src="/assets/logo_transparent.png" alt="Kurti Logo" class="h-28 w-auto object-contain" />
+            </div>
+            <h3 class="heading text-2xl font-bold brand-maroon mb-2">Kurti</h3>
+            <p class="text-gray-600 mb-4 text-sm">Modern silhouettes &amp; tailored festive kurtis</p>
+            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
+              Explore →
+            </span>
+          </a>
+
+          <a href="/gallery?category=kids"
+            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            <div class="mb-4 flex justify-center items-center h-28">
+              <img src="/assets/logo_transparent.png" alt="Kids Logo" class="h-28 w-auto object-contain" />
+            </div>
+            <h3 class="heading text-2xl font-bold brand-maroon mb-2">Kids</h3>
+            <p class="text-gray-600 mb-4 text-sm">Charming traditional attire for little ones</p>
+            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
+              Explore →
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -215,12 +203,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
         <div class="flex justify-center mb-8">
           <div class="w-20 h-px bg-[#D4AF37]"></div>
-          <div class="mx-4 text-[#D4AF37] text-xs tracking-[0.4em] uppercase font-semibold self-center">The Kaaru Promise</div>
+          <div class="mx-4 text-[#D4AF37] text-xs tracking-[0.4em] uppercase font-semibold self-center">Our Promise</div>
           <div class="w-20 h-px bg-[#D4AF37]"></div>
         </div>
         <blockquote class="heading text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-snug mb-10">
           "Every blouse we craft is<br/>
-          <span class="text-[#D4AF37]">not just worn — it is remembered."</span>
+          <span class="text-[#D4AF37]">not just worn, it is remembered."</span>
         </blockquote>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 text-left">
@@ -325,75 +313,76 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ═══════════════════════════════════════════════
          TESTIMONIALS — Premium horizontal cards
     ════════════════════════════════════════════════ -->
-    <section class="py-20 md:py-28 px-4 md:px-10 bg-[#fdf8f0]">
+    <section class="py-20 md:py-28 px-4 md:px-10 bg-[#e1a730]">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-xs tracking-[0.3em] uppercase font-semibold">Loved by Brides</span>
-          <h2 class="heading text-4xl md:text-5xl brand-maroon font-bold mt-3">What Our Brides Say</h2>
-          <div class="w-16 h-0.5 bg-[#D4AF37] mx-auto mt-5"></div>
+          <span class="text-[#5A0007] text-xs tracking-[0.3em] uppercase font-bold">Loved by Brides</span>
+          <h2 class="heading text-4xl md:text-5xl text-[#5A0007] font-bold mt-3">What Our Brides Say</h2>
+          <div class="w-16 h-0.5 bg-[#5A0007] mx-auto mt-5"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
-          <div class="bg-white p-8 md:p-10 relative group hover:shadow-xl transition-shadow duration-400">
-            <div class="absolute top-0 left-0 w-1 h-0 bg-[#D4AF37] group-hover:h-full transition-all duration-500"></div>
-            <div class="text-[#D4AF37] text-3xl mb-6 opacity-40 heading">"</div>
+          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
+            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
+            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
             <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
               The craftsmanship is impeccable. I felt like a queen on my wedding day. Every detail was perfect!
             </p>
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#800000] flex items-center justify-center text-white font-bold heading text-sm">P</div>
+              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">P</div>
               <div>
-                <p class="font-bold text-[#800000] text-sm tracking-wide">Priyadharshini</p>
+                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Priyadharshini</p>
                 <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Testimonial 2 — Featured -->
-          <div class="bg-[#800000] p-8 md:p-10 relative">
-            <div class="text-[#D4AF37] text-3xl mb-6 opacity-80 heading">"</div>
-            <p class="text-white/80 text-sm md:text-base leading-relaxed italic mb-8">
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
+            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
+            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
               From first consultation to wearing the blouse, my wife's experience was seamless. The quality is unmatched.
             </p>
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#D4AF37] flex items-center justify-center text-[#800000] font-bold heading text-sm">K</div>
+              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">K</div>
               <div>
-                <p class="font-bold text-white text-sm tracking-wide">Krishnaa</p>
+                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Krishnaa</p>
                 <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="bg-white p-8 md:p-10 relative group hover:shadow-xl transition-shadow duration-400">
-            <div class="absolute top-0 left-0 w-1 h-0 bg-[#D4AF37] group-hover:h-full transition-all duration-500"></div>
-            <div class="text-[#D4AF37] text-3xl mb-6 opacity-40 heading">"</div>
+          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
+            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
+            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
             <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
               Kaaru understands luxury. My blouse was the highlight of my engagement. Truly an heirloom piece!
             </p>
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#800000] flex items-center justify-center text-white font-bold heading text-sm">A</div>
+              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">A</div>
               <div>
-                <p class="font-bold text-[#800000] text-sm tracking-wide">Aishwarya</p>
+                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Aishwarya</p>
                 <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
-                  <i class="fas fa-star text-[#D4AF37] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
+                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
                 </div>
               </div>
             </div>
@@ -467,52 +456,52 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ═══════════════════════════════════════════════
          CONTACT — Elegant maroon panel
     ════════════════════════════════════════════════ -->
-    <section id="contact" class="py-20 md:py-28 bg-[#fdf8f0] px-4 md:px-10">
+    <section id="contact" class="py-20 md:py-28 bg-[#e1a730] px-4 md:px-10">
       <div class="max-w-7xl mx-auto">
 
         <div class="text-center mb-16">
-          <span class="text-[#D4AF37] text-xs tracking-[0.3em] uppercase font-semibold">Get in Touch</span>
-          <h2 class="heading text-4xl md:text-5xl brand-maroon font-bold mt-3 mb-4">Let's Connect</h2>
-          <p class="text-gray-500 max-w-xl mx-auto text-sm">Have questions? Want to discuss your design? We're here to make your bridal journey beautiful.</p>
-          <div class="w-16 h-0.5 bg-[#D4AF37] mx-auto mt-5"></div>
+          <span class="text-[#5A0007] text-xs tracking-[0.3em] uppercase font-bold">Get in Touch</span>
+          <h2 class="heading text-4xl md:text-5xl text-[#5A0007] font-bold mt-3 mb-4">Let's Connect</h2>
+          <p class="text-[#5A0007]/85 max-w-xl mx-auto text-sm font-medium">Have questions? Want to discuss your design? We're here to make your bridal journey beautiful.</p>
+          <div class="w-16 h-0.5 bg-[#5A0007] mx-auto mt-5"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200 max-w-4xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#5A0007]/20 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl">
           <!-- Phone -->
-          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#800000] transition-colors duration-400">
-            <div class="w-14 h-14 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30
-                        flex items-center justify-center mx-auto mb-5 group-hover:bg-[#D4AF37]/20 transition-colors">
-              <i class="fas fa-phone text-[#D4AF37] text-lg"></i>
+          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
+            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
+                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
+              <i class="fas fa-phone text-[#e1a730] group-hover:text-white text-lg"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/60 mb-2 transition-colors">Phone</p>
+            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">Phone</p>
             <a href="tel:+919629210802"
-              class="heading text-lg font-bold text-[#800000] group-hover:text-[#D4AF37] transition-colors">
+              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
               +91 96292 10802
             </a>
           </div>
 
-          <!-- WhatsApp — featured -->
-          <div class="bg-[#800000] p-8 md:p-10 text-center relative">
-            <div class="w-14 h-14 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40
-                        flex items-center justify-center mx-auto mb-5">
-              <i class="fab fa-whatsapp text-[#D4AF37] text-2xl"></i>
+          <!-- WhatsApp -->
+          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
+            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
+                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
+              <i class="fab fa-whatsapp text-[#e1a730] group-hover:text-white text-2xl"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-white/50 mb-2">WhatsApp</p>
+            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">WhatsApp</p>
             <a href="https://wa.me/919629210802" target="_blank"
-              class="heading text-lg font-bold text-[#D4AF37]">
+              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
               +91 96292 10802
             </a>
           </div>
 
           <!-- Instagram -->
-          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#800000] transition-colors duration-400">
-            <div class="w-14 h-14 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30
-                        flex items-center justify-center mx-auto mb-5 group-hover:bg-[#D4AF37]/20 transition-colors">
-              <i class="fab fa-instagram text-[#D4AF37] text-lg"></i>
+          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
+            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
+                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
+              <i class="fab fa-instagram text-[#e1a730] group-hover:text-white text-lg"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/60 mb-2 transition-colors">Instagram</p>
+            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">Instagram</p>
             <a href="https://instagram.com/the.wedding.blouse" target="_blank"
-              class="heading text-lg font-bold text-[#800000] group-hover:text-[#D4AF37] transition-colors">
+              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
               @the.wedding.blouse
             </a>
           </div>
@@ -520,8 +509,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Hours tag -->
         <div class="text-center mt-10">
-          <span class="inline-flex items-center gap-2 text-[#800000] text-sm font-semibold">
-            <i class="fas fa-clock text-[#D4AF37]"></i>
+          <span class="inline-flex items-center gap-2 text-[#5A0007] text-sm font-bold">
+            <i class="fas fa-clock text-[#5A0007]"></i>
             Mon – Sat &nbsp;·&nbsp; 11 AM – 7 PM
           </span>
         </div>

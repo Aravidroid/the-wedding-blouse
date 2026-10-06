@@ -67,10 +67,13 @@ const {
             x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 translate-y-1"
             class="absolute left-0 mt-2 w-52 bg-white shadow-premium rounded-lg py-2 z-50 border border-amber-100/60">
+            <a href="/gallery?category=regular" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Regular</a>
             <a href="/gallery?category=designer" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Designer</a>
             <a href="/gallery?category=manthram" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Manthram</a>
             <a href="/gallery?category=vaibhavam" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Vaibhavam</a>
             <a href="/gallery?category=mahotsavam" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Mahotsavam</a>
+            <a href="/gallery?category=kurti" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Kurti</a>
+            <a href="/gallery?category=kids" class="dropdown-item block px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50">Kids</a>
           </div>
         </div>
 
@@ -99,10 +102,13 @@ const {
       class="md:hidden bg-white px-4 py-3 border-t border-gray-100 space-y-2 shadow-lg">
       <a href="/" class="block py-2 text-gray-700 font-medium" @click="mobileOpen = false">Home</a>
       <div class="py-2 text-gray-700 font-bold brand-maroon">Categories:</div>
+      <a href="/gallery?category=regular" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Regular</a>
       <a href="/gallery?category=designer" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Designer</a>
       <a href="/gallery?category=manthram" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Manthram</a>
       <a href="/gallery?category=vaibhavam" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Vaibhavam</a>
       <a href="/gallery?category=mahotsavam" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Mahotsavam</a>
+      <a href="/gallery?category=kurti" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Kurti</a>
+      <a href="/gallery?category=kids" class="block pl-4 py-1 text-gray-600 hover:text-brand-maroon" @click="mobileOpen = false">Kids</a>
       <a href="/#about" class="block py-2 text-gray-700 font-medium" @click="mobileOpen = false">About Us</a>
       <a href="/#contact" class="block py-2 text-gray-700 font-medium" @click="mobileOpen = false">Get in Touch</a>
       <a href="/gallery" class="block text-center mt-3 py-2.5 bg-brand-maroon text-white font-medium rounded-lg" @click="mobileOpen = false">

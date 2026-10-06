@@ -8,7 +8,7 @@ const serializedGallery = JSON.stringify(galleryData);
 
 <BaseLayout
   title="Our Collections - THE WEDDING BLOUSE by Kaaru"
-  description="Explore our complete bridal blouse collections: Designer, Manthram, Vaibhavam, and Mahotsavam. Click any design to view its complete photo gallery.">
+  description="Explore our complete bridal blouse collections: Regular, Designer, Manthram, Vaibhavam, Mahotsavam, Kurti, and Kids. Click any design to view its complete photo gallery.">
 
   <main 
     class="flex-grow py-8 md:py-12 px-4 max-w-7xl mx-auto w-full"
@@ -23,7 +23,7 @@ const serializedGallery = JSON.stringify(galleryData);
       init() {
         const params = new URLSearchParams(window.location.search);
         const cat = params.get('category');
-        if (cat && ['designer', 'manthram', 'vaibhavam', 'mahotsavam'].includes(cat.toLowerCase())) {
+        if (cat && ['regular', 'designer', 'manthram', 'vaibhavam', 'mahotsavam', 'kurti', 'kids'].includes(cat.toLowerCase())) {
           this.currentCategory = cat.toLowerCase();
         }
         window.addEventListener('popstate', () => {
@@ -103,6 +103,12 @@ const serializedGallery = JSON.stringify(galleryData);
           All Collections
         </button>
         <button 
+          @click="setCategory('regular')" 
+          :class="currentCategory === 'regular' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
+          class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
+          Regular
+        </button>
+        <button 
           @click="setCategory('designer')" 
           :class="currentCategory === 'designer' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
           class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
@@ -125,6 +131,18 @@ const serializedGallery = JSON.stringify(galleryData);
           :class="currentCategory === 'mahotsavam' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
           class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
           Mahotsavam
+        </button>
+        <button 
+          @click="setCategory('kurti')" 
+          :class="currentCategory === 'kurti' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
+          class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
+          Kurti
+        </button>
+        <button 
+          @click="setCategory('kids')" 
+          :class="currentCategory === 'kids' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
+          class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
+          Kids
         </button>
       </div>
     </div>

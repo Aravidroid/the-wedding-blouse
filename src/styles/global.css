@@ -14,12 +14,12 @@ h1, h2, h3, .heading {
 
 .brand-gold, .text-brand-gold { color: #D4AF37; }
 .bg-brand-gold { background-color: #D4AF37; }
-.brand-maroon, .text-brand-maroon { color: #800000; }
-.bg-brand-maroon { background-color: #800000; }
+.brand-maroon, .text-brand-maroon { color: #5A0007; }
+.bg-brand-maroon { background-color: #5A0007; }
 .bg-brand-cream { background-color: #e1a730; }
 
 .hover\:brand-gold:hover, .hover\:text-brand-gold:hover { color: #D4AF37; }
-.hover\:brand-maroon:hover, .hover\:text-brand-maroon:hover { color: #800000; }
+.hover\:brand-maroon:hover, .hover\:text-brand-maroon:hover { color: #5A0007; }
 
 .shadow-premium {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
