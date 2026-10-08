@@ -15,33 +15,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <!-- Left: Brand Statement Panel -->
       <div class="relative z-10 flex flex-col justify-center bg-[#e1a730] text-[#5A0007]
-                  w-full md:w-[60%] px-10 md:px-16 py-24 md:py-0 shrink-0">
+                  w-full md:w-[70%] px-10 md:px-16 pt-12 pb-16 md:py-0 shrink-0">
 
-        <!-- Decorative corner ornaments with delayed ambient gold sheen -->
-        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-[#5A0007] opacity-40 gold-sheen-target"></div>
-        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-[#5A0007] opacity-40 gold-sheen-target"></div>
-
-        <!-- Headline (Curtain Rise Stage 1) -->
-        <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-[#5A0007] curtain-headline">
-          The<br/>
-          Wedding Blouse<br/>
-          <em class="not-italic text-[#7E1215]">by Kaaru.</em>
-        </h1>
-
-        <!-- Divider rule with Curtain Rise expansion -->
-        <div class="flex items-center gap-4 mb-6 curtain-divider-group">
-          <div class="h-px bg-[#5A0007] curtain-divider-line opacity-60"></div>
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5A0007] curtain-divider-dot"></div>
-          <div class="h-px bg-[#5A0007] curtain-divider-line opacity-60"></div>
+        <!-- Brand Title Wrapper with Centered Logo -->
+        <div class="curtain-headline w-fit max-w-full mx-auto mb-6 -mt-4 md:-mt-8">
+          <div class="flex justify-center -mb-2 md:-mb-3">
+            <img src="/assets/logo_transparent.png" alt="The Wedding Blouse by Kaaru" class="h-32 md:h-44 lg:h-48 w-auto object-contain drop-shadow-sm" />
+          </div>
+          <h1 class="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-[#5A0007] whitespace-nowrap tracking-wide">
+            <span>THE WEDDING BLOUSE</span>
+            <span class="block text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#5A0007] mt-1 tracking-wide">BY KAARU</span>
+          </h1>
         </div>
 
+
         <!-- Tagline (Curtain Rise Stage 2) -->
-        <p class="text-[#5A0007]/90 text-base md:text-lg leading-relaxed max-w-xs mb-10 font-medium curtain-subtext">
-          Every marriage begins with trust.<br/>Every bride begins with us.
+        <p class="text-[#5A0007]/90 text-base md:text-lg leading-relaxed mb-10 font-medium whitespace-nowrap text-center">
+          Every marriage begins with trust. Every bride begins with us.
         </p>
 
         <!-- CTA Buttons (Curtain Rise Stage 3 + Striking Light Beam on Button) -->
-        <div class="flex flex-col sm:flex-row gap-4 curtain-actions">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 curtain-actions">
           <a href="/gallery"
             class="gold-sheen-button relative overflow-hidden inline-flex items-center justify-center gap-2 bg-[#5A0007] text-[#e1a730]
                    font-bold text-sm tracking-wider uppercase px-8 py-4 shadow-lg">
@@ -57,28 +51,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             Our Story
           </a>
         </div>
-
-        <!-- Floating stat strip (Curtain Rise Stage 4) -->
-        <div class="mt-16 flex gap-10 curtain-stats">
-          <div>
-            <p class="heading text-3xl font-bold text-[#5A0007]">10+</p>
-            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Years of Craft</p>
-          </div>
-          <div class="w-px bg-[#5A0007]/25"></div>
-          <div>
-            <p class="heading text-3xl font-bold text-[#5A0007]">8</p>
-            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Collections</p>
-          </div>
-          <div class="w-px bg-[#5A0007]/25"></div>
-          <div>
-            <p class="heading text-3xl font-bold text-[#5A0007]">∞</p>
-            <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Happy Brides</p>
-          </div>
-        </div>
       </div>
 
       <!-- Right: Single Hero Image Panel (Curtain Rise Stage 1) -->
-      <div class="relative w-full md:w-[40%] min-h-[50vh] md:min-h-0 bg-[#e1a730] overflow-hidden curtain-image-panel">
+      <div class="relative w-full md:w-[30%] min-h-[50vh] md:min-h-0 bg-[#e1a730] overflow-hidden curtain-image-panel">
         <img src="/assets/kaaru.jpeg" alt="Kaaru Bridal Blouse Couture"
           class="w-full h-full object-cover object-center md:object-top block" />
         <!-- Subtle border accent -->
@@ -201,67 +177,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-         BRAND PROMISE — Full-width dark band
-    ════════════════════════════════════════════════ -->
-    <section class="relative py-20 md:py-28 overflow-hidden bg-[#1a0000]">
-      <!-- Background motif -->
-      <div class="absolute inset-0 opacity-[0.06]">
-        <svg width="100%" height="100%" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <pattern id="brocade" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="60" height="60" fill="none"/>
-              <path d="M30 5 L55 30 L30 55 L5 30 Z" fill="none" stroke="#D4AF37" stroke-width="1"/>
-              <circle cx="30" cy="30" r="6" fill="none" stroke="#D4AF37" stroke-width="1"/>
-            </pattern>
-          </defs>
-          <rect width="600" height="300" fill="url(#brocade)"/>
-        </svg>
-      </div>
-
-      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center editorial-reveal">
-        <div class="flex justify-center mb-8">
-          <div class="w-20 h-px bg-[#D4AF37]"></div>
-          <div class="mx-4 text-[#D4AF37] text-xs tracking-[0.4em] uppercase font-semibold self-center">Our Promise</div>
-          <div class="w-20 h-px bg-[#D4AF37]"></div>
-        </div>
-        <blockquote class="heading text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-snug mb-10">
-          "Every blouse we craft is<br/>
-          <span class="text-[#D4AF37]">not just worn, it is remembered."</span>
-        </blockquote>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 text-left">
-          <div style="--reveal-index: 0" class="editorial-reveal flex gap-4 items-start">
-            <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
-              <i class="fas fa-hand-holding-heart text-[#D4AF37] text-sm"></i>
-            </div>
-            <div>
-              <h4 class="text-white font-bold text-sm tracking-wide mb-1">Personal Consultation</h4>
-              <p class="text-white/50 text-xs leading-relaxed">We sit with every bride to understand her story, style, and vision.</p>
-            </div>
-          </div>
-          <div style="--reveal-index: 1" class="editorial-reveal flex gap-4 items-start">
-            <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
-              <i class="fas fa-pencil-ruler text-[#D4AF37] text-sm"></i>
-            </div>
-            <div>
-              <h4 class="text-white font-bold text-sm tracking-wide mb-1">Bespoke Design</h4>
-              <p class="text-white/50 text-xs leading-relaxed">Every blouse is an original — never a template, always a masterpiece.</p>
-            </div>
-          </div>
-          <div style="--reveal-index: 2" class="editorial-reveal flex gap-4 items-start">
-            <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
-              <i class="fas fa-gem text-[#D4AF37] text-sm"></i>
-            </div>
-            <div>
-              <h4 class="text-white font-bold text-sm tracking-wide mb-1">Heirloom Quality</h4>
-              <p class="text-white/50 text-xs leading-relaxed">Craftsmanship so refined, it passes from one generation to the next.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

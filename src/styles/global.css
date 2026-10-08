@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Montserrat:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 h1, h2, h3, .heading {
     font-family: 'Playfair Display', serif;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.02em;
 }
 
 .brand-gold, .text-brand-gold { color: #D4AF37; }
