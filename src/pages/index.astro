@@ -11,59 +11,62 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ═══════════════════════════════════════════════
          HERO — Full-screen editorial split layout
     ════════════════════════════════════════════════ -->
-    <section class="relative min-h-screen flex flex-col md:flex-row overflow-hidden">
+    <section class="relative min-h-screen flex flex-col md:flex-row overflow-hidden hero-curtain-container">
 
       <!-- Left: Brand Statement Panel -->
       <div class="relative z-10 flex flex-col justify-center bg-[#e1a730] text-[#5A0007]
-                  w-full md:w-[45%] px-10 md:px-16 py-24 md:py-0 shrink-0">
+                  w-full md:w-[60%] px-10 md:px-16 py-24 md:py-0 shrink-0">
 
-        <!-- Decorative corner ornament -->
-        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-[#5A0007] opacity-40"></div>
-        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-[#5A0007] opacity-40"></div>
+        <!-- Decorative corner ornaments with delayed ambient gold sheen -->
+        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-[#5A0007] opacity-40 gold-sheen-target"></div>
+        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-[#5A0007] opacity-40 gold-sheen-target"></div>
 
-        <!-- Headline -->
-        <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-[#5A0007]">
+        <!-- Headline (Curtain Rise Stage 1) -->
+        <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-[#5A0007] curtain-headline">
           The<br/>
-          Wedding<br/>
-          <em class="not-italic text-[#7E1215]">Blouse.</em>
+          Wedding Blouse<br/>
+          <em class="not-italic text-[#7E1215]">by Kaaru.</em>
         </h1>
 
-        <!-- Divider rule -->
-        <div class="flex items-center gap-4 mb-6">
-          <div class="h-px bg-[#5A0007] w-12 opacity-60"></div>
-          <div class="w-1.5 h-1.5 rounded-full bg-[#5A0007]"></div>
-          <div class="h-px bg-[#5A0007] w-12 opacity-60"></div>
+        <!-- Divider rule with Curtain Rise expansion -->
+        <div class="flex items-center gap-4 mb-6 curtain-divider-group">
+          <div class="h-px bg-[#5A0007] curtain-divider-line opacity-60"></div>
+          <div class="w-1.5 h-1.5 rounded-full bg-[#5A0007] curtain-divider-dot"></div>
+          <div class="h-px bg-[#5A0007] curtain-divider-line opacity-60"></div>
         </div>
 
-        <p class="text-[#5A0007]/90 text-base md:text-lg leading-relaxed max-w-xs mb-10 font-medium">
+        <!-- Tagline (Curtain Rise Stage 2) -->
+        <p class="text-[#5A0007]/90 text-base md:text-lg leading-relaxed max-w-xs mb-10 font-medium curtain-subtext">
           Every marriage begins with trust.<br/>Every bride begins with us.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4">
+        <!-- CTA Buttons (Curtain Rise Stage 3 + Striking Light Beam on Button) -->
+        <div class="flex flex-col sm:flex-row gap-4 curtain-actions">
           <a href="/gallery"
-            class="inline-flex items-center justify-center gap-2 bg-[#5A0007] text-[#e1a730]
-                   font-bold text-sm tracking-wider uppercase px-8 py-4 shadow-md
-                   hover:bg-[#7E1215] hover:text-white transition-colors duration-300">
-            Explore Collections
-            <i class="fas fa-arrow-right text-xs"></i>
+            class="gold-sheen-button relative overflow-hidden inline-flex items-center justify-center gap-2 bg-[#5A0007] text-[#e1a730]
+                   font-bold text-sm tracking-wider uppercase px-8 py-4 shadow-lg">
+            <span class="relative z-10 flex items-center gap-2">
+              Explore Collections
+              <i class="fas fa-arrow-right text-xs"></i>
+            </span>
           </a>
           <a href="#about"
             class="inline-flex items-center justify-center gap-2 border-2 border-[#5A0007] text-[#5A0007]
                    font-semibold text-sm tracking-wider uppercase px-8 py-4
-                   hover:bg-[#5A0007] hover:text-white transition-colors duration-300">
+                   hover:bg-[#5A0007] hover:text-[#e1a730] transition-all duration-300">
             Our Story
           </a>
         </div>
 
-        <!-- Floating stat strip -->
-        <div class="mt-16 flex gap-10">
+        <!-- Floating stat strip (Curtain Rise Stage 4) -->
+        <div class="mt-16 flex gap-10 curtain-stats">
           <div>
             <p class="heading text-3xl font-bold text-[#5A0007]">10+</p>
             <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Years of Craft</p>
           </div>
           <div class="w-px bg-[#5A0007]/25"></div>
           <div>
-            <p class="heading text-3xl font-bold text-[#5A0007]">7</p>
+            <p class="heading text-3xl font-bold text-[#5A0007]">8</p>
             <p class="text-[#5A0007]/75 text-xs tracking-wider uppercase mt-1 font-semibold">Collections</p>
           </div>
           <div class="w-px bg-[#5A0007]/25"></div>
@@ -74,21 +77,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
 
-      <!-- Right: Single Hero Image Panel -->
-      <div class="relative w-full md:flex-1 min-h-[70vh] md:min-h-0 bg-[#e1a730] overflow-hidden">
+      <!-- Right: Single Hero Image Panel (Curtain Rise Stage 1) -->
+      <div class="relative w-full md:w-[40%] min-h-[50vh] md:min-h-0 bg-[#e1a730] overflow-hidden curtain-image-panel">
         <img src="/assets/kaaru.jpeg" alt="Kaaru Bridal Blouse Couture"
           class="w-full h-full object-cover object-center md:object-top block" />
         <!-- Subtle border accent -->
-        <div class="absolute inset-0 border-[3px] border-[#5A0007]/20 pointer-events-none"></div>
+        <div class="absolute inset-0 border-[3px] border-[#5A0007]/20 pointer-events-none gold-sheen-target"></div>
       </div>
 
     </section>
     <!-- ═══════════════════════════════════════════════
-         COLLECTIONS — 7-card grid
+         COLLECTIONS — 7-card grid with Editorial Unveil
     ════════════════════════════════════════════════ -->
     <section class="py-12 md:py-20 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12 editorial-reveal">
           <span class="text-brand-gold font-semibold text-sm tracking-widest uppercase">Collections</span>
           <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3">Browse by Category</h2>
         </div>
@@ -96,86 +99,106 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
           <a href="/gallery?category=regular"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 0"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Regular Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Regular</h3>
             <p class="text-gray-600 mb-4 text-sm">Timeless everyday elegance &amp; classic cuts</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=designer"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 1"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Designer Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Designer</h3>
             <p class="text-gray-600 mb-4 text-sm">Chic, Contemporary &amp; Custom Stitched blouses</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=manthram"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 2"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Manthram Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Manthram</h3>
             <p class="text-gray-600 mb-4 text-sm">Soft, elegant styles defining grace</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=vaibhavam"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 3"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Vaibhavam Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Vaibhavam</h3>
             <p class="text-gray-600 mb-4 text-sm">Splendour with intricate handwork</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=mahotsavam"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 4"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Mahotsavam Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Mahotsavam</h3>
             <p class="text-gray-600 mb-4 text-sm">Grand celebration, richest designs</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=kurti"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 5"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Kurti Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Kurti</h3>
             <p class="text-gray-600 mb-4 text-sm">Modern silhouettes &amp; tailored festive kurtis</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
+            </span>
+          </a>
+
+          <a href="/gallery?category=halfsaree"
+            style="--reveal-index: 6"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
+            <div class="mb-4 flex justify-center items-center h-28">
+              <img src="/assets/logo_transparent.png" alt="Halfsaree Logo" class="h-28 w-auto object-contain" />
+            </div>
+            <h3 class="heading text-2xl font-bold brand-maroon mb-2">Halfsaree</h3>
+            <p class="text-gray-600 mb-4 text-sm">Graceful drapes &amp; exquisite traditional ensembles</p>
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
 
           <a href="/gallery?category=kids"
-            class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+            style="--reveal-index: 7"
+            class="editorial-reveal category-card block cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center shadow-premium">
             <div class="mb-4 flex justify-center items-center h-28">
               <img src="/assets/logo_transparent.png" alt="Kids Logo" class="h-28 w-auto object-contain" />
             </div>
             <h3 class="heading text-2xl font-bold brand-maroon mb-2">Kids</h3>
             <p class="text-gray-600 mb-4 text-sm">Charming traditional attire for little ones</p>
-            <span class="text-brand-maroon font-semibold text-sm hover:text-brand-gold transition inline-block">
-              Explore →
+            <span class="text-brand-maroon font-semibold text-sm inline-block">
+              Explore <span class="card-arrow ml-1">→</span>
             </span>
           </a>
         </div>
@@ -200,7 +223,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </svg>
       </div>
 
-      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
+      <div class="relative z-10 max-w-5xl mx-auto px-8 text-center editorial-reveal">
         <div class="flex justify-center mb-8">
           <div class="w-20 h-px bg-[#D4AF37]"></div>
           <div class="mx-4 text-[#D4AF37] text-xs tracking-[0.4em] uppercase font-semibold self-center">Our Promise</div>
@@ -212,7 +235,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </blockquote>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 text-left">
-          <div class="flex gap-4 items-start">
+          <div style="--reveal-index: 0" class="editorial-reveal flex gap-4 items-start">
             <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
               <i class="fas fa-hand-holding-heart text-[#D4AF37] text-sm"></i>
             </div>
@@ -221,7 +244,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <p class="text-white/50 text-xs leading-relaxed">We sit with every bride to understand her story, style, and vision.</p>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
+          <div style="--reveal-index: 1" class="editorial-reveal flex gap-4 items-start">
             <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
               <i class="fas fa-pencil-ruler text-[#D4AF37] text-sm"></i>
             </div>
@@ -230,7 +253,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <p class="text-white/50 text-xs leading-relaxed">Every blouse is an original — never a template, always a masterpiece.</p>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
+          <div style="--reveal-index: 2" class="editorial-reveal flex gap-4 items-start">
             <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center shrink-0 mt-1">
               <i class="fas fa-gem text-[#D4AF37] text-sm"></i>
             </div>
@@ -248,7 +271,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     ════════════════════════════════════════════════ -->
     <section class="py-20 md:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 md:px-10">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 editorial-reveal">
           <div>
             <div class="flex items-center gap-2 mb-3">
               <i class="fab fa-instagram text-[#800000] text-lg"></i>
@@ -256,7 +279,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <h2 class="heading text-3xl md:text-5xl brand-maroon font-bold">Follow Our Story</h2>
           </div>
-          <a href="https://instagram.com/the.wedding.blouse" target="_blank"
+          <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
             class="mt-6 md:mt-0 inline-flex items-center gap-2 text-sm font-semibold tracking-wider uppercase text-[#800000]
                    border-b-2 border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors self-end">
             Open Instagram
@@ -264,48 +287,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
         </div>
 
-        <!-- Instagram mosaic: 5 tiles with varying sizes -->
-        <div class="grid grid-cols-4 grid-rows-2 gap-2 md:gap-3 h-[400px] md:h-[500px]">
+        <!-- Instagram mosaic: 5 tiles with varying sizes, all linking directly to Instagram -->
+        <div class="grid grid-cols-4 grid-rows-2 gap-2 md:gap-3 h-[400px] md:h-[500px] editorial-reveal">
           <!-- Large tile left -->
-          <div class="col-span-2 row-span-2 instafeed-item bg-[#800000]/10 rounded-sm overflow-hidden">
+          <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
+            class="col-span-2 row-span-2 instafeed-item bg-[#800000]/10 rounded-sm overflow-hidden block relative group">
             <div class="w-full h-full bg-gradient-to-br from-[#800000]/20 to-[#e1a730]/20 relative">
               <div class="absolute inset-0 flex items-center justify-center opacity-30">
                 <img src="/assets/logo_transparent.png" alt="" class="h-24 object-contain"/>
               </div>
               <div class="instafeed-overlay">
                 <div class="text-center text-white">
-                  <i class="fab fa-instagram text-3xl mb-2 block"></i>
+                  <i class="fab fa-instagram text-3xl mb-2 block group-hover:scale-110 transition-transform duration-300"></i>
                   <p class="text-xs font-semibold">@the.wedding.blouse</p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <!-- Top right tile -->
-          <div class="col-span-1 instafeed-item bg-[#e1a730]/30 rounded-sm overflow-hidden">
+          <!-- Top right tile 1 -->
+          <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
+            class="col-span-1 instafeed-item bg-[#e1a730]/30 rounded-sm overflow-hidden block relative group">
             <div class="w-full h-full flex items-center justify-center relative">
               <div class="instafeed-overlay rounded-sm">
-                <i class="fab fa-instagram text-white text-xl"></i>
+                <i class="fab fa-instagram text-white text-xl group-hover:scale-110 transition-transform duration-300"></i>
               </div>
             </div>
-          </div>
-          <div class="col-span-1 instafeed-item bg-[#800000]/20 rounded-sm overflow-hidden">
+          </a>
+
+          <!-- Top right tile 2 -->
+          <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
+            class="col-span-1 instafeed-item bg-[#800000]/20 rounded-sm overflow-hidden block relative group">
             <div class="w-full h-full flex items-center justify-center relative">
               <div class="instafeed-overlay rounded-sm">
-                <i class="fab fa-instagram text-white text-xl"></i>
+                <i class="fab fa-instagram text-white text-xl group-hover:scale-110 transition-transform duration-300"></i>
               </div>
             </div>
-          </div>
+          </a>
 
-          <!-- Bottom right tiles -->
-          <div class="col-span-2 instafeed-item bg-[#D4AF37]/20 rounded-sm overflow-hidden">
+          <!-- Bottom right tile -->
+          <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
+            class="col-span-2 instafeed-item bg-[#D4AF37]/20 rounded-sm overflow-hidden block relative group">
             <div class="w-full h-full flex items-center justify-center relative">
               <p class="text-[#800000]/30 heading text-2xl font-bold italic select-none">"Every stitch, a story"</p>
               <div class="instafeed-overlay rounded-sm">
-                <i class="fab fa-instagram text-white text-xl"></i>
+                <i class="fab fa-instagram text-white text-xl group-hover:scale-110 transition-transform duration-300"></i>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -313,78 +342,69 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ═══════════════════════════════════════════════
          TESTIMONIALS — Premium horizontal cards
     ════════════════════════════════════════════════ -->
-    <section class="py-20 md:py-28 px-4 md:px-10 bg-[#e1a730]">
+    <section class="py-12 md:py-20 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <span class="text-[#5A0007] text-xs tracking-[0.3em] uppercase font-bold">Loved by Brides</span>
-          <h2 class="heading text-4xl md:text-5xl text-[#5A0007] font-bold mt-3">What Our Brides Say</h2>
-          <div class="w-16 h-0.5 bg-[#5A0007] mx-auto mt-5"></div>
+        <div class="text-center mb-12">
+          <span class="text-xs md:text-sm tracking-[0.25em] uppercase font-bold text-gray-800">Loved by Clients</span>
+          <h2 class="heading text-3xl md:text-5xl text-[#5A0007] font-bold mt-3 mb-3">What Our Brides Say</h2>
+          <p class="text-gray-600 text-sm md:text-base">Real stories from real celebrations</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
-          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
-            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
-            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
-            <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
-              The craftsmanship is impeccable. I felt like a queen on my wedding day. Every detail was perfect!
-            </p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">P</div>
-              <div>
-                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Priyadharshini</p>
-                <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                </div>
+          <div class="bg-[#e1a730] p-8 md:p-10 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex gap-1.5 text-black text-sm mb-6">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
+              <p class="text-gray-900 text-sm md:text-base leading-relaxed italic mb-8">
+                "The craftsmanship is impeccable. I felt like a queen on my wedding day. Every detail was perfect!"
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-sm md:text-base tracking-wide">- Priyadharshini</p>
             </div>
           </div>
 
           <!-- Testimonial 2 -->
-          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
-            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
-            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
-            <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
-              From first consultation to wearing the blouse, my wife's experience was seamless. The quality is unmatched.
-            </p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">K</div>
-              <div>
-                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Krishnaa</p>
-                <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                </div>
+          <div class="bg-[#e1a730] p-8 md:p-10 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex gap-1.5 text-black text-sm mb-6">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
+              <p class="text-gray-900 text-sm md:text-base leading-relaxed italic mb-8">
+                "From first consultation to wearing the blouse, my wife's experience was seamless. The quality is unmatched."
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-sm md:text-base tracking-wide">- Krishnaa</p>
             </div>
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="bg-white p-8 md:p-10 relative rounded-2xl shadow-lg group hover:shadow-2xl transition-all duration-400">
-            <div class="absolute top-0 left-0 w-1 h-0 bg-[#e1a730] group-hover:h-full transition-all duration-500 rounded-l-2xl"></div>
-            <div class="text-[#e1a730] text-3xl mb-6 opacity-60 heading">"</div>
-            <p class="text-gray-600 text-sm md:text-base leading-relaxed italic mb-8">
-              Kaaru understands luxury. My blouse was the highlight of my engagement. Truly an heirloom piece!
-            </p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm">A</div>
-              <div>
-                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Aishwarya</p>
-                <div class="flex gap-0.5 mt-1">
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                  <i class="fas fa-star text-[#e1a730] text-[10px]"></i>
-                </div>
+          <div class="bg-[#e1a730] p-8 md:p-10 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex gap-1.5 text-black text-sm mb-6">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
+              <p class="text-gray-900 text-sm md:text-base leading-relaxed italic mb-8">
+                "Kaaru understands luxury. My blouse was the highlight of my engagement. Truly an heirloom piece!"
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-sm md:text-base tracking-wide">- Aishwarya</p>
             </div>
           </div>
         </div>
@@ -395,121 +415,124 @@ import BaseLayout from '../layouts/BaseLayout.astro';
          ABOUT — Two-column editorial with image
     ════════════════════════════════════════════════ -->
     <section id="about" class="w-full overflow-hidden">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch editorial-reveal">
 
           <!-- Image side: full photo visible -->
           <div class="relative order-2 md:order-1 bg-[#800000] flex items-center justify-center overflow-hidden">
-            <img src="/assets/kaaru.jpeg" alt="The Wedding Blouse by Kaaru"
-              class="w-full h-auto object-contain block hover:scale-[1.02] transition-transform duration-700" />
+            <img src="/assets/kaaru.jpg" alt="The Wedding Blouse by Kaaru"
+              class="w-full h-auto object-contain block" />
           </div>
 
-          <!-- Text side -->
-          <div class="bg-[#800000] p-10 md:p-16 lg:p-24 flex flex-col justify-center order-1 md:order-2">
-            <span class="text-[#D4AF37] text-xs tracking-[0.35em] uppercase font-semibold block mb-5">Our Story</span>
-            <h2 class="heading text-4xl md:text-5xl text-white font-bold mb-8 leading-snug">
-              Crafted with Love.<br/>
-              <span class="text-[#D4AF37]">Worn with Pride.</span>
+          <!-- Text side: warm gold background matching brand palette and screenshot -->
+          <div class="bg-[#e1a730] p-10 md:p-14 lg:p-20 flex flex-col justify-center order-1 md:order-2 text-[#4A0006]">
+            <span class="text-[#5A0007] text-xs tracking-[0.35em] uppercase font-bold block mb-3">ABOUT US</span>
+            <h2 class="heading text-4xl md:text-5xl lg:text-6xl text-[#5A0007] font-bold mb-6">
+              Our Story
             </h2>
-            <p class="text-white/70 text-base leading-relaxed mb-6">
-              The Wedding Blouse – by Kaaru gives our brides a truly meaningful piece of bridal artistry, making her special day even more memorable.
-            </p>
-            <p class="text-white/70 text-base leading-relaxed mb-10">
-              We are dedicated to creating timeless bridal blouses that embody love, tradition, and artistry — making every bride's special day unforgettable.
+
+            <p class="text-[#5A0007]/90 text-sm md:text-base leading-relaxed mb-4 font-normal">
+              The Wedding Blouse – by Kaaru gives our brides a truly meaningful and complete piece of bridal artistry, making her special day even more memorable.
             </p>
 
-            <!-- Process steps -->
-            <div class="space-y-5 mb-10">
-              <div class="flex items-start gap-4">
-                <div class="w-6 h-6 rounded-full bg-[#D4AF37] text-[#800000] text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">1</div>
-                <div>
-                  <p class="text-white font-semibold text-sm">Personal Consultation</p>
-                  <p class="text-white/50 text-xs mt-0.5">We sit with every bride to understand her story and vision.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-6 h-6 rounded-full bg-[#D4AF37] text-[#800000] text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">2</div>
-                <div>
-                  <p class="text-white font-semibold text-sm">Bespoke Design & Detailing</p>
-                  <p class="text-white/50 text-xs mt-0.5">Intricate embroidery, maggam work, and personal touches.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-6 h-6 rounded-full bg-[#D4AF37] text-[#800000] text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">3</div>
-                <div>
-                  <p class="text-white font-semibold text-sm">Perfect Stitch & Delivery</p>
-                  <p class="text-white/50 text-xs mt-0.5">From cut to finish — tailored to absolute perfection.</p>
-                </div>
-              </div>
+            <p class="text-[#5A0007]/90 text-sm md:text-base leading-relaxed mb-6 font-normal">
+              We are dedicated to creating timeless bridal blouses that embody love, tradition, and artistry, making every bride’s special day unforgettable.
+            </p>
+
+            <h3 class="text-[#5A0007] font-bold text-base md:text-lg mb-3">
+              What We Do at The Wedding Blouse – by Kaaru
+            </h3>
+
+            <div class="space-y-3 mb-8 text-sm md:text-base leading-relaxed text-[#5A0007]/95">
+              <p>
+                <strong class="font-bold text-[#5A0007]">Personal Consultation –</strong> We sit with every bride to understand her story, style, and vision.
+              </p>
+              <p>
+                <strong class="font-bold text-[#5A0007]">Design Detailing –</strong> Together, we create unique blouse designs with intricate elements and personal touches.
+              </p>
+              <p>
+                <strong class="font-bold text-[#5A0007]">Perfect Stitch &amp; Style –</strong> From cut to finish, every blouse is tailored to perfection.
+              </p>
+              <p>
+                <strong class="font-bold text-[#5A0007]">Theme Coordination –</strong> Ensuring the blouse blends beautifully with the bridal theme and outfit.
+              </p>
+              <p>
+                <strong class="font-bold text-[#5A0007]">Our Signature Touch –</strong> With our expert inputs, the design evolves into a flawless masterpiece.
+              </p>
             </div>
 
+            <p class="text-[#5A0007] font-bold italic text-base md:text-lg leading-snug mb-8">
+              “With 10+ years of expertise, our team brings timeless bridal craftsmanship to brides all across India.”
+            </p>
+
             <a href="/gallery"
-              class="inline-flex items-center gap-2 bg-[#D4AF37] text-[#800000]
-                     font-bold text-sm tracking-wider uppercase px-8 py-4 self-start
-                     hover:bg-white transition-colors duration-300">
-              Browse Our Designs
-              <i class="fas fa-arrow-right text-xs"></i>
+              class="gold-sheen-button relative overflow-hidden inline-flex items-center gap-2 bg-[#5A0007] text-[#e1a730]
+                     font-bold text-sm tracking-wider uppercase px-8 py-4 self-start shadow-lg">
+              <span class="relative z-10 flex items-center gap-2">
+                Browse Our Designs
+                <i class="fas fa-arrow-right text-xs"></i>
+              </span>
             </a>
           </div>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════
-         CONTACT — Elegant maroon panel
+         CONTACT — Let's Connect
     ════════════════════════════════════════════════ -->
-    <section id="contact" class="py-20 md:py-28 bg-[#e1a730] px-4 md:px-10">
+    <section id="contact" class="py-20 md:py-28 bg-white px-4 md:px-10">
       <div class="max-w-7xl mx-auto">
 
-        <div class="text-center mb-16">
-          <span class="text-[#5A0007] text-xs tracking-[0.3em] uppercase font-bold">Get in Touch</span>
+        <div class="text-center mb-16 editorial-reveal">
+          <span class="text-xs md:text-sm tracking-[0.25em] uppercase font-bold text-gray-800">Get in Touch</span>
           <h2 class="heading text-4xl md:text-5xl text-[#5A0007] font-bold mt-3 mb-4">Let's Connect</h2>
-          <p class="text-[#5A0007]/85 max-w-xl mx-auto text-sm font-medium">Have questions? Want to discuss your design? We're here to make your bridal journey beautiful.</p>
-          <div class="w-16 h-0.5 bg-[#5A0007] mx-auto mt-5"></div>
+          <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">Have questions? Want to discuss your design? We're here to make your bridal journey beautiful.</p>
+          <div class="w-16 h-0.5 bg-[#e1a730] mx-auto mt-5"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#5A0007]/20 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <!-- Phone -->
-          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
-            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
-                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
-              <i class="fas fa-phone text-[#e1a730] group-hover:text-white text-lg"></i>
+          <div style="--reveal-index: 0" class="editorial-reveal contact-card bg-[#e1a730] p-8 md:p-10 text-center rounded-2xl shadow-md">
+            <div class="contact-icon w-14 h-14 rounded-full bg-white/30 border border-white/60
+                        flex items-center justify-center mx-auto mb-5">
+              <i class="fas fa-phone text-[#5A0007] text-lg"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">Phone</p>
+            <p class="font-bold text-xs tracking-widest uppercase text-[#5A0007]/80 mb-2">Phone</p>
             <a href="tel:+919629210802"
-              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
+              class="heading contact-link text-lg font-bold text-[#5A0007] block">
               +91 96292 10802
             </a>
           </div>
 
           <!-- WhatsApp -->
-          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
-            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
-                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
-              <i class="fab fa-whatsapp text-[#e1a730] group-hover:text-white text-2xl"></i>
+          <div style="--reveal-index: 1" class="editorial-reveal contact-card bg-[#e1a730] p-8 md:p-10 text-center rounded-2xl shadow-md">
+            <div class="contact-icon w-14 h-14 rounded-full bg-white/30 border border-white/60
+                        flex items-center justify-center mx-auto mb-5">
+              <i class="fab fa-whatsapp text-[#5A0007] text-2xl"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">WhatsApp</p>
-            <a href="https://wa.me/919629210802" target="_blank"
-              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
+            <p class="font-bold text-xs tracking-widest uppercase text-[#5A0007]/80 mb-2">WhatsApp</p>
+            <a href="https://wa.me/919629210802" target="_blank" rel="noopener noreferrer"
+              class="heading contact-link text-lg font-bold text-[#5A0007] block">
               +91 96292 10802
             </a>
           </div>
 
           <!-- Instagram -->
-          <div class="bg-white p-8 md:p-10 text-center group hover:bg-[#5A0007] transition-colors duration-400">
-            <div class="w-14 h-14 rounded-full bg-[#e1a730]/20 border border-[#e1a730]/50
-                        flex items-center justify-center mx-auto mb-5 group-hover:bg-white/20 transition-colors">
-              <i class="fab fa-instagram text-[#e1a730] group-hover:text-white text-lg"></i>
+          <div style="--reveal-index: 2" class="editorial-reveal contact-card bg-[#e1a730] p-8 md:p-10 text-center rounded-2xl shadow-md">
+            <div class="contact-icon w-14 h-14 rounded-full bg-white/30 border border-white/60
+                        flex items-center justify-center mx-auto mb-5">
+              <i class="fab fa-instagram text-[#5A0007] text-lg"></i>
             </div>
-            <p class="font-bold text-xs tracking-widest uppercase text-gray-500 group-hover:text-white/70 mb-2 transition-colors">Instagram</p>
-            <a href="https://instagram.com/the.wedding.blouse" target="_blank"
-              class="heading text-lg font-bold text-[#5A0007] group-hover:text-white transition-colors">
+            <p class="font-bold text-xs tracking-widest uppercase text-[#5A0007]/80 mb-2">Instagram</p>
+            <a href="https://www.instagram.com/the.wedding.blouse/" target="_blank" rel="noopener noreferrer"
+              class="heading contact-link text-lg font-bold text-[#5A0007] block">
               @the.wedding.blouse
             </a>
           </div>
         </div>
 
         <!-- Hours tag -->
-        <div class="text-center mt-10">
-          <span class="inline-flex items-center gap-2 text-[#5A0007] text-sm font-bold">
+        <div class="text-center mt-10 editorial-reveal">
+          <span class="inline-flex items-center gap-2 text-gray-800 text-sm font-semibold">
             <i class="fas fa-clock text-[#5A0007]"></i>
             Mon – Sat &nbsp;·&nbsp; 11 AM – 7 PM
           </span>
@@ -521,7 +544,221 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </main>
 </BaseLayout>
 
+<script>
+  // Editorial Unveil Scroll Observer (IntersectionObserver)
+  document.addEventListener('DOMContentLoaded', () => {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.editorial-reveal').forEach((el) => {
+      revealObserver.observe(el);
+    });
+  });
+</script>
+
 <style>
+/* ══════════════════════════════════════════════════
+   PHASE 1: THE "CURTAIN RISE" (Hero Load 0.0s - 1.6s)
+   Graceful, cinematic entrance choreography on load
+   ══════════════════════════════════════════════════ */
+@keyframes curtainHeadline {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes curtainDividerLine {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 3rem; /* 48px */
+    opacity: 0.6;
+  }
+}
+
+@keyframes curtainDividerDot {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes curtainFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes curtainImageReveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0% 0);
+  }
+}
+
+.curtain-headline {
+  animation: curtainHeadline 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.curtain-divider-line {
+  animation: curtainDividerLine 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+}
+
+.curtain-divider-dot {
+  animation: curtainDividerDot 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both;
+}
+
+.curtain-subtext {
+  animation: curtainFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both;
+}
+
+.curtain-actions {
+  animation: curtainFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.05s both;
+}
+
+.curtain-stats {
+  animation: curtainFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.25s both;
+}
+
+.curtain-image-panel {
+  animation: curtainImageReveal 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+/* ══════════════════════════════════════════════════
+   PHASE 2: AMBIENT GOLD SHEEN SWEEP (Starts at 2.2s+)
+   Non-overlapping: Begins strictly AFTER Curtain Rise
+   Repeats on buttons every 5 seconds
+   ══════════════════════════════════════════════════ */
+
+/* Button Radiant Beam Sheen (every 5 seconds) */
+@keyframes buttonSheenBeam {
+  0% {
+    transform: translateX(-160%) skewX(-25deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.95;
+  }
+  24% {
+    transform: translateX(360%) skewX(-25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(360%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+.gold-sheen-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 235, 150, 0.85) 50%,
+    rgba(255, 255, 255, 0.2) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+  opacity: 0;
+  /* Starts at 2.2s after Curtain Rise settles, then sweeps every 5s */
+  animation: buttonSheenBeam 5s cubic-bezier(0.4, 0, 0.2, 1) 2.2s infinite;
+}
+
+/* 4. Frame Borders Ambient Sheen */
+@keyframes ambientGoldSheen {
+  0% {
+    transform: translateX(-160%) rotate(25deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.8;
+  }
+  24% {
+    transform: translateX(250%) rotate(25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(250%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+.gold-sheen-target {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-sheen-target::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 235, 150, 0.6) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  opacity: 0;
+  animation: ambientGoldSheen 7.5s cubic-bezier(0.4, 0, 0.2, 1) 2.2s infinite;
+}
+
+/* ══════════════════════════════════════════════════
+   PHASE 3: EDITORIAL UNVEIL (Scroll-Triggered Stagger)
+   Triggers independently only when sections scroll into view
+   ══════════════════════════════════════════════════ */
+.editorial-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+  transition-delay: calc(var(--reveal-index, 0) * 110ms);
+}
+
+.editorial-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Marquee scroll animation */
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -531,20 +768,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   animation: marquee 28s linear infinite;
 }
 
-/* Bounce slow for scroll indicator */
+/* Soft bounce slow for scroll indicator */
 @keyframes bounce-slow {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
 }
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
-}
-
-/* Collection card base */
-.collection-card {
-  transition: transform 0.4s ease;
-}
-.collection-card:hover {
-  transform: scale(1.015);
 }
 </style>

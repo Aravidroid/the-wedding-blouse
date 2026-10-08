@@ -8,7 +8,7 @@ const serializedGallery = JSON.stringify(galleryData);
 
 <BaseLayout
   title="Our Collections - THE WEDDING BLOUSE by Kaaru"
-  description="Explore our complete bridal blouse collections: Regular, Designer, Manthram, Vaibhavam, Mahotsavam, Kurti, and Kids. Click any design to view its complete photo gallery.">
+  description="Explore our complete bridal blouse collections: Regular, Designer, Manthram, Vaibhavam, Mahotsavam, Kurti, Halfsaree, and Kids. Click any design to view its complete photo gallery.">
 
   <main 
     class="flex-grow py-8 md:py-12 px-4 max-w-7xl mx-auto w-full"
@@ -23,7 +23,7 @@ const serializedGallery = JSON.stringify(galleryData);
       init() {
         const params = new URLSearchParams(window.location.search);
         const cat = params.get('category');
-        if (cat && ['regular', 'designer', 'manthram', 'vaibhavam', 'mahotsavam', 'kurti', 'kids'].includes(cat.toLowerCase())) {
+        if (cat && ['regular', 'designer', 'manthram', 'vaibhavam', 'mahotsavam', 'kurti', 'halfsaree', 'kids'].includes(cat.toLowerCase())) {
           this.currentCategory = cat.toLowerCase();
         }
         window.addEventListener('popstate', () => {
@@ -137,6 +137,12 @@ const serializedGallery = JSON.stringify(galleryData);
           :class="currentCategory === 'kurti' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
           class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
           Kurti
+        </button>
+        <button 
+          @click="setCategory('halfsaree')" 
+          :class="currentCategory === 'halfsaree' ? 'active-pill shadow-md' : 'bg-white text-gray-700 border-brand-maroon/20 hover:border-brand-maroon'"
+          class="px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold border transition shadow-sm">
+          Halfsaree
         </button>
         <button 
           @click="setCategory('kids')" 
@@ -307,8 +313,9 @@ const serializedGallery = JSON.stringify(galleryData);
               <span>Enquire on WhatsApp</span>
             </a>
             <a 
-              href="https://instagram.com/the.wedding.blouse" 
+              href="https://www.instagram.com/the.wedding.blouse/" 
               target="_blank" 
+              rel="noopener noreferrer"
               class="w-full py-2.5 border border-pink-500 text-pink-600 hover:bg-pink-50 text-xs font-semibold rounded-lg flex items-center justify-center space-x-2 transition">
               <i class="fab fa-instagram text-sm"></i>
               <span>View on Instagram</span>

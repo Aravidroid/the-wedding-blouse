@@ -159,6 +159,7 @@ h1, h2, h3, .heading {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .instafeed-overlay {
@@ -167,9 +168,10 @@ h1, h2, h3, .heading {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(128, 0, 0, 0.7);
+    background: rgba(90, 0, 7, 0.72);
+    backdrop-filter: blur(2px);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,29 +333,82 @@ main {
     margin-right: 8px;
 }
 
-/* NAV LINK UNDERLINE ANIMATION */
+/* NAV LINK UNDERLINE ANIMATION (Center-Out Hairline Expansion) */
 .nav-link {
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-link::after {
     content: "";
     position: absolute;
     left: 0;
+    right: 0;
     bottom: -4px;
-    width: 0%;
     height: 2px;
-    background: #e4b70e; /* gold */
-    transition: width 0.3s ease;
+    background: #D4AF37; /* brand gold */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-link:hover {
-    color: #7B0000; /* maroon */
+    color: #5A0007; /* rich maroon */
 }
 
 .nav-link:hover::after {
-    width: 100%;
+    transform: scaleX(1);
+}
+
+/* CATEGORY CARD LUXURY HOVER */
+.category-card {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, box-shadow;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(90, 0, 7, 0.12), 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+
+.category-card .card-arrow {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-card:hover .card-arrow {
+    transform: translateX(5px);
+}
+
+/* CONTACT CARD LUXURY HOVER */
+.contact-card {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, box-shadow;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(225, 167, 48, 0.35), 0 6px 12px rgba(90, 0, 7, 0.1);
+}
+
+.contact-icon {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.1);
+    box-shadow: 0 4px 18px rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: #ffffff;
+}
+
+.contact-link {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.contact-card:hover .contact-link {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(90, 0, 7, 0.3);
 }
 
 

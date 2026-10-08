@@ -1,165 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wedding Blouse by Karunya - Elegant Bridal Blouse Designs</title>
+    <title>THE WEDDING BLOUSE by Kaaru - Premium Bridal Designs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">The Wedding Blouse</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#catalog" class="nav-link">Catalog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+
+<body class="bg-brand-cream scroll-smooth">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 bg-white shadow-premium">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between md:py-6">
+            <div class="flex items-center space-x-2">
+                <div class="text-lg md:text-2xl heading brand-maroon font-bold">
+                    The Wedding Blouse by Kaaru
+                </div>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+
+                <a href="#home" class="nav-link text-gray-700 font-medium text-sm">Home</a>
+
+                <div class="relative group">
+                    <button class="nav-link text-gray-700 font-medium text-sm flex items-center space-x-1">
+                        <span>Categories</span>
+                        <i
+                            class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown-menu absolute left-0 mt-2 w-52 bg-white shadow-premium rounded-lg py-3">
+                        <a href="gallery.html?category=designer" class="dropdown-item block">Designer</a>
+                        <a href="gallery.html?category=manthram" class="dropdown-item block">Manthram</a>
+                        <a href="gallery.html?category=vaibhavam" class="dropdown-item block">Vaibhavam</a>
+                        <a href="gallery.html?category=mahotsavam" class="dropdown-item block">Mahotsavam</a>
+                    </div>
+                </div>
+
+                <a href="#about" class="nav-link text-gray-700 font-medium text-sm">About Us</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium text-sm">Get in Touch</a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1 class="brand-name">The Wedding Blouse by Karunya</h1>
-            <p class="tagline">Elegant Bridal Blouse Designs</p>
-            <p class="welcome-message">Discover timeless beauty in every stitch. Custom-crafted wedding blouses that celebrate your special day with elegance and sophistication.</p>
-            <button class="cta-button" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">Explore Collection</button>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main id="home" class="scroll-smooth">
+        <!-- Hero Banner -->
+        <section
+            class="relative h-screen md:h-96 flex items-center justify-center overflow-hidden bg-gradient-to-b from-brand-cream via-white to-brand-cream">
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 1200 600" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="motif" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                            <circle cx="100" cy="100" r="30" fill="none" stroke="#D4AF37" stroke-width="1" />
+                            <path d="M 100 70 Q 120 100 100 130 Q 80 100 100 70" fill="none" stroke="#D4AF37"
+                                stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="1200" height="600" fill="url(#motif)" />
+                </svg>
+            </div>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p>
-                    Welcome to The Wedding Blouse by Karunya, where tradition meets contemporary elegance. We are a boutique dedicated to creating beautiful, custom wedding blouses that capture the essence of your special moments. With years of expertise in bridal fashion, each piece is meticulously crafted with attention to detail, premium fabrics, and intricate embroidery.
+            <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
+                <h1 class="text-4xl md:text-6xl heading brand-maroon font-bold mb-4 leading-tight">
+                    THE WEDDING BLOUSE BY KAARU
+                </h1>
+                <p class="text-gray-700 text-lg md:text-xl mb-8 font-light">
+                    Every marriage begins with trust. Every bride begins with us
                 </p>
-                <p>
-                    Our commitment to quality and craftsmanship ensures that every blouse tells a unique story. We believe in creating pieces that are not just garments, but cherished memories stitched with love and dedication. From traditional designs to modern interpretations, we bring your vision to life with unparalleled artistry.
-                </p>
-                <div class="about-features">
-                    <div class="feature">
-                        <h3>Quality Fabrics</h3>
-                        <p>Premium materials selected with care</p>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="py-12 md:py-20 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-brand-gold font-semibold text-sm tracking-widest uppercase">Collections</span>
+                    <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3">Browse by Category</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="gallery.html?category=designer"
+                        class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+                        <div class="mb-4 flex justify-center items-center h-28">
+                            <img src="assets/logo_transparent.png" alt="Designer Logo" class="h-28 w-auto object-contain">
+                        </div>
+                        <h3 class="heading text-2xl font-bold brand-maroon mb-2">Designer</h3>
+                        <p class="text-gray-600 mb-4">Chic, Contemporary & Custom Stitched blouses</p>
+                        <span class="text-brand-maroon font-semibold text-sm hover:brand-gold transition inline-block">
+                            Explore →
+                        </span>
+                    </a>
+
+                    <a href="gallery.html?category=manthram"
+                        class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+                        <div class="mb-4 flex justify-center items-center h-28">
+                            <img src="assets/logo_transparent.png" alt="Manthram Logo" class="h-28 w-auto object-contain">
+                        </div>
+                        <h3 class="heading text-2xl font-bold brand-maroon mb-2">Manthram</h3>
+                        <p class="text-gray-600 mb-4">Soft, elegant styles defining grace</p>
+                        <span class="text-brand-maroon font-semibold text-sm hover:brand-gold transition inline-block">
+                            Explore →
+                        </span>
+                    </a>
+
+                    <a href="gallery.html?category=vaibhavam"
+                        class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+                        <div class="mb-4 flex justify-center items-center h-28">
+                            <img src="assets/logo_transparent.png" alt="Vaibhavam Logo" class="h-28 w-auto object-contain">
+                        </div>
+                        <h3 class="heading text-2xl font-bold brand-maroon mb-2">Vaibhavam</h3>
+                        <p class="text-gray-600 mb-4">Splendour with intricate handwork</p>
+                        <span class="text-brand-maroon font-semibold text-sm hover:brand-gold transition inline-block">
+                            Explore →
+                        </span>
+                    </a>
+
+                    <a href="gallery.html?category=mahotsavam"
+                        class="category-card block shadow-hover cursor-pointer rounded-xl overflow-hidden bg-brand-cream p-8 text-center hover:bg-opacity-50 transition">
+                        <div class="mb-4 flex justify-center items-center h-28">
+                            <img src="assets/logo_transparent.png" alt="Mahotsavam Logo" class="h-28 w-auto object-contain">
+                        </div>
+                        <h3 class="heading text-2xl font-bold brand-maroon mb-2">Mahotsavam</h3>
+                        <p class="text-gray-600 mb-4">Grand celebration, richest designs</p>
+                        <span class="text-brand-maroon font-semibold text-sm hover:brand-gold transition inline-block">
+                            Explore →
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Gallery -->
+        <section class="py-12 md:py-20 px-4 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center space-x-2 mb-3">
+                    <i class="fab fa-instagram text-xl brand-maroon"></i>
+                    <span
+                        class="text-brand-gold font-semibold text-sm tracking-widest uppercase">@the.wedding.blouse</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3">Follow Our Story</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                <div class="instafeed-item aspect-square bg-gray-300 rounded-lg overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/30 to-brand-gold/30"></div>
+                    <div class="instafeed-overlay">
+                        <div class="text-center text-white">
+                            <i class="fab fa-instagram text-2xl mb-2"></i>
+                            <p class="text-xs font-semibold">@the.wedding.blouse</p>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <h3>Expert Craftsmanship</h3>
-                        <p>Detail-oriented artistry in every stitch</p>
+                </div>
+
+                <div class="instafeed-item aspect-square bg-gray-300 rounded-lg overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/30 to-brand-gold/30"></div>
+                    <div class="instafeed-overlay">
+                        <div class="text-center text-white">
+                            <i class="fab fa-instagram text-2xl mb-2"></i>
+                            <p class="text-xs font-semibold">@the.wedding.blouse</p>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <h3>Unique Designs</h3>
-                        <p>Bespoke creations tailored to you</p>
+                </div>
+
+                <div class="instafeed-item aspect-square bg-gray-300 rounded-lg overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/30 to-brand-gold/30"></div>
+                    <div class="instafeed-overlay">
+                        <div class="text-center text-white">
+                            <i class="fab fa-instagram text-2xl mb-2"></i>
+                            <p class="text-xs font-semibold">@the.wedding.blouse</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instafeed-item aspect-square bg-gray-300 rounded-lg overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/30 to-brand-gold/30"></div>
+                    <div class="instafeed-overlay">
+                        <div class="text-center text-white">
+                            <i class="fab fa-instagram text-2xl mb-2"></i>
+                            <p class="text-xs font-semibold">@the.wedding.blouse</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Catalog Section -->
-    <section id="catalog" class="catalog">
-        <div class="container">
-            <h2 class="section-title">Our Collection</h2>
-            <div class="catalog-grid">
-                <!-- Bridal Blouse -->
-                <div class="catalog-card">
-                    <div class="card-icon">👰</div>
-                    <h3 class="card-title">Bridal Blouse</h3>
-                    <p class="card-description">
-                        Exquisite wedding blouses featuring intricate embroidery, delicate beadwork, and luxurious fabrics. Each design is crafted to complement your wedding attire with timeless elegance and grace.
-                    </p>
-                    <button class="card-button">View Details</button>
+            <div class="text-center mt-8">
+                <a href="https://instagram.com/the.wedding.blouse" target="_blank"
+                    class="inline-flex items-center space-x-2 text-brand-maroon font-semibold hover:brand-gold transition">
+                    <span>Visit Our Instagram</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-12 md:py-20 px-4 bg-[#e1a730]">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-[#5A0007] font-bold text-xs md:text-sm tracking-[0.25em] uppercase">Loved by
+                        Brides</span>
+                    <h2 class="text-3xl md:text-5xl heading text-[#5A0007] font-bold mt-3 mb-4">What Our Brides Say</h2>
+                    <p class="text-[#5A0007]/80 max-w-2xl mx-auto text-sm md:text-base font-medium">Real stories from real celebrations</p>
+                    <div class="w-16 h-0.5 bg-[#5A0007] mx-auto mt-4"></div>
                 </div>
 
-                <!-- Designer Blouse -->
-                <div class="catalog-card">
-                    <div class="card-icon">✨</div>
-                    <h3 class="card-title">Designer Blouse</h3>
-                    <p class="card-description">
-                        Contemporary designer blouses that blend modern aesthetics with traditional elements. Perfect for celebrations, festive occasions, and statement-making fashion moments with a touch of sophistication.
-                    </p>
-                    <button class="card-button">View Details</button>
-                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg relative flex flex-col justify-between">
+                        <div>
+                            <div class="text-[#e1a730] text-4xl mb-3 heading leading-none opacity-80">“</div>
+                            <p class="text-gray-700 mb-6 italic text-sm md:text-base leading-relaxed">"The craftsmanship is impeccable. I felt like a queen on my
+                                wedding day. Every detail was perfect!"</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-amber-100">
+                            <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm flex-shrink-0">P</div>
+                            <div>
+                                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Priyadharshini</p>
+                                <div class="flex space-x-0.5 text-[#e1a730] text-xs mt-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Custom Blouse -->
-                <div class="catalog-card">
-                    <div class="card-icon">🎨</div>
-                    <h3 class="card-title">Custom Blouse</h3>
-                    <p class="card-description">
-                        Create your own masterpiece! Our custom design service allows you to bring your imagination to life. Work with our expert designers to craft a blouse that perfectly matches your vision and personality.
-                    </p>
-                    <button class="card-button">View Details</button>
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg relative flex flex-col justify-between">
+                        <div>
+                            <div class="text-[#e1a730] text-4xl mb-3 heading leading-none opacity-80">“</div>
+                            <p class="text-gray-700 mb-6 italic text-sm md:text-base leading-relaxed">"From first consultation to wearing the blouse, my wife's
+                                experience was seamless. The quality is unmatched."</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-amber-100">
+                            <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm flex-shrink-0">K</div>
+                            <div>
+                                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Krishnaa</p>
+                                <div class="flex space-x-0.5 text-[#e1a730] text-xs mt-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg relative flex flex-col justify-between">
+                        <div>
+                            <div class="text-[#e1a730] text-4xl mb-3 heading leading-none opacity-80">“</div>
+                            <p class="text-gray-700 mb-6 italic text-sm md:text-base leading-relaxed">"Kaaru understands luxury. My blouse was the highlight of
+                                my engagement. Truly an heirloom piece!"</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-amber-100">
+                            <div class="w-10 h-10 rounded-full bg-[#5A0007] flex items-center justify-center text-white font-bold heading text-sm flex-shrink-0">A</div>
+                            <div>
+                                <p class="font-bold text-[#5A0007] text-sm tracking-wide">Aishwarya</p>
+                                <div class="flex space-x-0.5 text-[#e1a730] text-xs mt-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <h3>Send Us Your Inquiry</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
+        <!-- About Section -->
+        <section id="about" class="py-12 md:py-20 px-4 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border border-amber-200/50">
+                    <img src="assets/Kaaru.jpeg" alt="The Wedding Blouse by Kaaru"
+                        class="w-full h-auto object-cover rounded-2xl hover:scale-105 transition-transform duration-500">
                 </div>
 
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <div class="info-item">
-                        <strong>Phone:</strong>
-                        <p>+91 98765 43210</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>Location:</strong>
-                        <p>Bangalore, Karnataka, India</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>Email:</strong>
-                        <p>info@theweddingblouse.com</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>Hours:</strong>
-                        <p>Monday - Saturday: 10 AM - 6 PM<br>Sunday: By Appointment</p>
+                <div>
+                    <span class="text-brand-gold font-semibold text-sm tracking-widest uppercase">About Us</span>
+                    <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3 mb-4">Our Story</h2>
+
+                    <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        The Wedding Blouse – by Kaaru gives our brides a truly meaningful and complete piece of bridal
+                        artistry, making her special day even more memorable.
+                    </p>
+
+                    <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        We are dedicated to creating timeless bridal blouses that embody love, tradition, and artistry,
+                        making every bride’s special day unforgettable.
+                    </p>
+
+                    <p class="text-gray-700 mb-4 text-lg leading-relaxed font-semibold">
+                        What We Do at The Wedding Blouse – by Kaaru
+                    </p>
+
+                    <ul class="text-gray-700 mb-8 text-lg leading-relaxed space-y-2">
+                        <li><strong>Personal Consultation –</strong> We sit with every bride to understand her story,
+                            style, and vision.</li>
+                        <li><strong>Design Detailing –</strong> Together, we create unique blouse designs with intricate
+                            elements and personal touches.</li>
+                        <li><strong>Perfect Stitch & Style –</strong> From cut to finish, every blouse is tailored to
+                            perfection.</li>
+                        <li><strong>Theme Coordination –</strong> Ensuring the blouse blends beautifully with the bridal
+                            theme and outfit.</li>
+                        <li><strong>Our Signature Touch –</strong> With our expert inputs, the design evolves into a
+                            flawless masterpiece.</li>
+                    </ul>
+
+                    <p class="text-brand-gold font-semibold text-lg italic mb-8">
+                        “With 10+ years of expertise, our team brings timeless bridal craftsmanship to brides all across
+                        India.”
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-6 mb-8">
+                        <div>
+                            <p class="text-3xl md:text-4xl heading brand-gold font-bold">10+</p>
+                            <p class="text-gray-600 font-semibold mt-1">Years of Expertise</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl md:text-4xl heading brand-gold font-bold">5000+</p>
+                            <p class="text-gray-600 font-semibold mt-1">Happy Brides</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl md:text-4xl heading brand-gold font-bold">100%</p>
+                            <p class="text-gray-600 font-semibold mt-1">Hand-Crafted</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 md:py-20 px-4 bg-brand-cream">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-brand-gold font-semibold text-sm tracking-widest uppercase">Get in Touch</span>
+                    <h2 class="text-3xl md:text-5xl heading brand-maroon font-bold mt-3 mb-4">Let's Connect</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Have questions? Want to discuss your design? We're here
+                        to make your bridal journey special</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-lg p-8 shadow-premium w-full max-w-2xl">
+                        <h3 class="heading text-2xl font-bold brand-maroon mb-6">Contact Details</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-phone text-2xl brand-gold mt-1"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Phone</p>
+                                    <a href="tel:+919629210802" class="text-gray-600 hover:brand-maroon transition">+91
+                                        9629210802</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fab fa-whatsapp text-2xl text-green-500 mt-1"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">WhatsApp</p>
+                                    <a href="https://wa.me/919629210802" target="_blank"
+                                        class="text-gray-600 hover:brand-maroon transition">+91 9629210802</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fab fa-instagram text-2xl text-pink-500 mt-1"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Instagram</p>
+                                    <a href="https://instagram.com/the.wedding.blouse" target="_blank"
+                                        class="text-gray-600 hover:brand-maroon transition">
+                                        @the.wedding.blouse
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-clock text-2xl brand-gold mt-1"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Hours</p>
+                                    <p class="text-gray-600">Mon - Sat: 11 AM - 7 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919629210802?text=Hi%20Kaaru!%20I'm%20interested%20in%20your%20bridal%20blouse%20collection.%20Can%20you%20share%20more%20details?"
+        target="_blank" class="sticky-whatsapp">
+        <button
+            class="bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition flex items-center space-x-2">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="hidden md:inline font-semibold">Chat with us</span>
+        </button>
+    </a>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <div class="bottom-nav md:hidden">
+        <div class="nav-item active" onclick="scrollToSection('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
         </div>
-    </section>
+        <div class="nav-item" onclick="scrollToSection('catalog')">
+            <i class="fas fa-th"></i>
+            <span>Designs</span>
+        </div>
+        <div class="nav-item" onclick="scrollToSection('contact')">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 The Wedding Blouse by Karunya. All rights reserved.</p>
-            <p>Crafted with love and dedication to your special moments.</p>
+    <footer class="bg-brand-maroon text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="border-t border-brand-gold/30 pt-8 text-center">
+                <p class="text-sm text-gray-300">© 2025 Kaaru - The Wedding Blouse. All rights reserved. | <a href="#"
+                        class="hover:text-brand-gold transition">Privacy Policy</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20a%20wedding%20blouse" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.472 14.382c-.297-.15-1.739-.86-2.009-.96-.27-.11-.465-.165-.66.165-.195.33-.76.96-.93 1.155-.17.195-.34.22-.637.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.15-.173.199-.297.297-.495.099-.198.05-.371-.024-.52-.075-.149-.66-1.591-.904-2.18-.237-.558-.48-.482-.66-.49-.17-.008-.364-.01-.558-.01-.194 0-.51.073-.777.365-.267.293-1.021 .998-1.021 2.442 0 1.441 1.044 2.829 1.191 3.023.149.194 2.065 3.161 5.003 4.418.699.303 1.246.484 1.67.619.7.222 1.338.191 1.842.116.561-.083 1.739-.711 1.985-1.398.245-.686.245-1.275.172-1.399-.074-.124-.27-.198-.566-.347m-5.421-7.403h-.004c-1.473 0-2.854.571-3.891 1.607-1.037 1.036-1.609 2.415-1.609 3.887 0 1.472.572 2.851 1.609 3.887 1.037 1.036 2.418 1.608 3.891 1.608h.004c1.472 0 2.851-.572 3.887-1.608 1.036-1.036 1.608-2.415 1.608-3.887 0-1.472-.572-2.851-1.608-3.887-1.036-1.036-2.415-1.607-3.887-1.607" fill="currentColor"/>
-            <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" fill="none"/>
-        </svg>
-    </a>
+    <!-- Custom Lightbox Modal for Manthram -->
+    <div id="manthramModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 transition-opacity duration-300">
+        <div
+            class="relative max-w-4xl w-full mx-4 bg-brand-cream rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button onclick="closeManthramModal()"
+                class="absolute top-4 right-4 text-white hover:text-brand-gold text-2xl z-50 bg-black/40 w-10 h-10 rounded-full flex items-center justify-center transition">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Slider Container -->
+            <div
+                class="w-full md:w-2/3 relative bg-black flex items-center justify-center min-h-[350px] md:h-[600px] overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-in-out w-full h-full" id="modalSlider"
+                    style="transform: translateX(0%);">
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                        <img src="assets/Manthram.jpg" alt="Manthram Blouse 1"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                        <img src="assets/Manthram1.jpg" alt="Manthram Blouse 2"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+
+                <!-- Slider Nav Buttons -->
+                <button onclick="prevSlide()"
+                    class="absolute left-4 bg-black/45 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center transition z-10">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <button onclick="nextSlide()"
+                    class="absolute right-4 bg-black/45 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center transition z-10">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Details Panel -->
+            <div class="w-full md:w-1/3 p-6 flex flex-col justify-between bg-white text-gray-900">
+                <div>
+                    <h3 class="heading text-3xl font-bold brand-maroon mb-2">Manthram</h3>
+                    <p class="text-brand-gold font-semibold mb-4">Trending Bridal Blouse</p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        A masterpiece of soft, elegant styling tailored to perfection for the contemporary bride.
+                        Hand-crafted details that define grace and beauty.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="https://www.instagram.com/p/DTIkrEuCVTI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                        target="_blank"
+                        class="w-full py-3 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 hover:opacity-90 text-white font-semibold rounded-lg flex items-center justify-center space-x-2 transition shadow-lg">
+                        <i class="fab fa-instagram text-xl"></i>
+                        <span>View on Instagram</span>
+                    </a>
+                    <a href="https://wa.me/919629210802?text=Hi%20Kaaru!%20I'm%20interested%20in%20the%20Manthram%20bridal%20blouse."
+                        target="_blank"
+                        class="w-full py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg flex items-center justify-center space-x-2 transition shadow-lg">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Inquire on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

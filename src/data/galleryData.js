@@ -832,6 +832,21 @@ export const galleryData = {
         "assets/Mahotsavam/4 (5)/Mahotsavam_017.jpg",
         "assets/Mahotsavam/4 (5)/Mahotsavam_018.jpg"
       ]
+    },
+    {
+      "id": "mahotsavam-6",
+      "title": "Mahotsavam Design #6",
+      "category": "mahotsavam",
+      "categoryName": "Mahotsavam",
+      "folderName": "4 (6)",
+      "images": [
+        "assets/Mahotsavam/4 (6)/Mahotsavam_019.jpeg",
+        "assets/Mahotsavam/4 (6)/Mahotsavam_020.jpeg",
+        "assets/Mahotsavam/4 (6)/Mahotsavam_021.jpg",
+        "assets/Mahotsavam/4 (6)/Mahotsavam_022.jpg",
+        "assets/Mahotsavam/4 (6)/Mahotsavam_023.jpg",
+        "assets/Mahotsavam/4 (6)/Mahotsavam_024.jpg"
+      ]
     }
   ],
   "kurti": [
@@ -896,6 +911,69 @@ export const galleryData = {
         "assets/Kurti/5 (4)/Kurti (11).jpeg",
         "assets/Kurti/5 (4)/Kurti (12).jpeg",
         "assets/Kurti/5 (4)/Kurti (13).jpeg"
+      ]
+    },
+    {
+      "id": "kurti-6",
+      "title": "Kurti Design #6",
+      "category": "kurti",
+      "categoryName": "Kurti",
+      "folderName": "5 (5)",
+      "images": [
+        "assets/Kurti/5 (5)/Kurti (14).jpg",
+        "assets/Kurti/5 (5)/Kurti (15).jpg"
+      ]
+    },
+    {
+      "id": "kurti-7",
+      "title": "Kurti Design #7",
+      "category": "kurti",
+      "categoryName": "Kurti",
+      "folderName": "5 (6)",
+      "images": [
+        "assets/Kurti/5 (6)/Kurti (16).jpg",
+        "assets/Kurti/5 (6)/Kurti (17).jpg",
+        "assets/Kurti/5 (6)/Kurti (18).jpg"
+      ]
+    },
+    {
+      "id": "kurti-8",
+      "title": "Kurti Design #8",
+      "category": "kurti",
+      "categoryName": "Kurti",
+      "folderName": "5 (7)",
+      "images": [
+        "assets/Kurti/5 (7)/Kurti (19).jpg",
+        "assets/Kurti/5 (7)/Kurti (20).jpg",
+        "assets/Kurti/5 (7)/Kurti (21).jpg",
+        "assets/Kurti/5 (7)/Kurti (22).jpg"
+      ]
+    }
+  ],
+  "halfsaree": [
+    {
+      "id": "halfsaree-1",
+      "title": "Halfsaree Design #1",
+      "category": "halfsaree",
+      "categoryName": "Halfsaree",
+      "folderName": "7",
+      "images": [
+        "assets/Halfsaree/7/Halfsaree (1).jpg",
+        "assets/Halfsaree/7/Halfsaree (2).jpg",
+        "assets/Halfsaree/7/Halfsaree (3).jpg",
+        "assets/Halfsaree/7/Halfsaree (4).jpg"
+      ]
+    },
+    {
+      "id": "halfsaree-2",
+      "title": "Halfsaree Design #2",
+      "category": "halfsaree",
+      "categoryName": "Halfsaree",
+      "folderName": "7 (2)",
+      "images": [
+        "assets/Halfsaree/7 (2)/Halfsaree (5).jpg",
+        "assets/Halfsaree/7 (2)/Halfsaree (6).jpg",
+        "assets/Halfsaree/7 (2)/Halfsaree (7).jpg"
       ]
     }
   ],
